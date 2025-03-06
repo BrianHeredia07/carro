@@ -5,6 +5,7 @@
 package mx.itson.carrito.ui;
 
 import java.util.Scanner;
+import mx.itson.carito.enums.TipoMotor;
 import mx.itson.carrito.entidades.Carro;
 
 /**
@@ -30,6 +31,7 @@ public class Main {
    ford.setColor("Gris");
    ford.setModel("Focus");
    ford.setKilometraje(10000);
+   ford.setTipoMotor(TipoMotor.HIBRIDO);
    
            
    ford.calculateTime(distancia, velocidad);

@@ -1,12 +1,28 @@
 
 package mx.itson.carrito.entidades;
 
+import mx.itson.carito.enums.TipoMotor;
+
 
 /**
  *
  * @author Dorantes Rogel Angel Adrian 
  */
 public class Carro {
+
+    /**
+     * @return the tipoMotor
+     */
+    public TipoMotor getTipoMotor() {
+        return tipoMotor;
+    }
+
+    /**
+     * @param tipoMotor the tipoMotor to set
+     */
+    public void setTipoMotor(TipoMotor tipoMotor) {
+        this.tipoMotor = tipoMotor;
+    }
 
     /**
      * @return the kilometraje
@@ -82,6 +98,7 @@ public class Carro {
     private Double speed;
     private Double miles;
     private float kilometraje;
+    private TipoMotor tipoMotor;
     
     
 /**
