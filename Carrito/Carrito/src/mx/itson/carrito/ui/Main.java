@@ -6,6 +6,7 @@ package mx.itson.carrito.ui;
 
 import java.util.Scanner;
 import mx.itson.carito.enums.TipoMotor;
+import mx.itson.carito.enums.TipoTransmision;
 import mx.itson.carrito.entidades.Carro;
 
 /**
@@ -32,7 +33,7 @@ public class Main {
    ford.setModel("Focus");
    ford.setKilometraje(10000);
    ford.setTipoMotor(TipoMotor.HIBRIDO);
-   
+   ford.setTipoTransmision(TipoTransmision.AUTOMATICA);
            
    ford.calculateTime(distancia, velocidad);
   double  tiempo = ford.calculateTime(distancia, velocidad);

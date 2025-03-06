@@ -2,6 +2,7 @@
 package mx.itson.carrito.entidades;
 
 import mx.itson.carito.enums.TipoMotor;
+import mx.itson.carito.enums.TipoTransmision;
 
 
 /**
@@ -9,6 +10,20 @@ import mx.itson.carito.enums.TipoMotor;
  * @author Dorantes Rogel Angel Adrian 
  */
 public class Carro {
+
+    /**
+     * @return the tipoTransmision
+     */
+    public TipoTransmision getTipoTransmision() {
+        return tipoTransmision;
+    }
+
+    /**
+     * @param tipoTransmision the tipoTransmision to set
+     */
+    public void setTipoTransmision(TipoTransmision tipoTransmision) {
+        this.tipoTransmision = tipoTransmision;
+    }
 
     /**
      * @return the tipoMotor
@@ -99,7 +114,7 @@ public class Carro {
     private Double miles;
     private float kilometraje;
     private TipoMotor tipoMotor;
-    
+    private TipoTransmision tipoTransmision;
     
 /**
  * Calcula el tiempo que tarda el carro en recorrer una distancia determinada por el usuario.
